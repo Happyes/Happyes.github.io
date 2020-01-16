@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/table.css">
+    <!-- https://codepen.io/NielsVoogt/pen/GRgBrmy -->
+    <script type="text/javascript">
+        var indice = 0;
+        frases = new Array();
+        frases[0] = "Happy.es 😊";
+        frases[1] = "Valora Tu Experiencia";
+        frases[2] = "Te Extrañamos.....";
+        frases[3] = "Se Amable <3  ";
+        
+        indice = Math.random()*(frases.length);
+        indice = Math.floor(indice);
+        
+        function rotar() {
+        if (indice == frases.length) {indice = 0;}
+        document.getElementById("rotando").innerHTML = frases[indice];
+        indice++;
+        setTimeout("rotar();",1000);
+        }
+        </script>
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20px;
+}
+
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  width: 180px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #666;    
+}
+.div-img:hover .img {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+</style>
+    <div class="phone">
+        <div class="container" id="js_container">
+            <div class="content">  
+                <div id="rotando" class="rotar"></div>
+                <script type="text/javascript">rotar();</script>
+                <!-- <h1>Happy.es</h1> -->
+            <div class="division">
+                <div class="container">
+                    <div class="div-img" >
+                      <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                      <br>
+                      <span>
+                        furious</span>
+                    </div>
+                    <div class="div-img" >
+                        <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                        <br>
+                      <span>
+                        annoying</span>
+                    </div>
+                    <div class="div-img" >
+                        <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                        <br>
+                        <span>normal</span>
+                    </div>
+                    <div class="div-img" >
+                        <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                        <br>
+                        <span>happy</span>
+                    </div>
+                    <div class="div-img" >
+                        <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                        <br>
+                        <span>happyest</span>
+                    </div>
+                  </div>
+            </div>
+    
+                <button type="button" id="js_show-navigation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="menu">
+                <h1>Menu</h1>
+    
+                <div class="button-container">
+                    <button type="button" id="js_hide-navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </button>
+                </div>
+                <div class="division">
+                    <div class="container">
+                        <div class="div-img" >
+                          <img class="img" src="./img/cara-molesta2.gif" title="Foto3" alt="Foto3">
+                          <br>
+                          <span>
+                            furious</span>
+                        </div>
+                        <div class="div-img" >
+                            <img class="img" src="./img/confunfida.gif" title="Foto3" alt="Foto3">
+                            <br>
+                          <span>
+                            annoying</span>
+                        </div>
+                        <div class="div-img" >
+                            <img class="img" src="./img/carita-normal.gif" title="Foto3" alt="Foto3">
+                            <br>
+                            <span>normal</span>
+                        </div>
+                        <div class="div-img" >
+                            <img class="img" src="./img/satisfecho.gif" title="Foto3" alt="Foto3">
+                            <br>
+                            <span>happy</span>
+                        </div>
+                        <div class="div-img" >
+                            <img class="img" src="./img/cara-feliz2.gif" title="Foto3" alt="Foto3">
+                            <br>
+                            <span>happyest</span>
+                        </div>
+                      </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+   <script src="table.js"></script>
+</body>
+</html>
